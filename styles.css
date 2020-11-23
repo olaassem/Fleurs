@@ -202,8 +202,8 @@ header {
 
 header h2{
   font-family: 'Lora', serif;
-  font-size: 3.6rem;
-  margin-bottom: 40px;
+  font-size: 4rem;
+  margin-bottom: 30px;
 }
 
 @media all and (min-width: 640px) {
@@ -211,20 +211,18 @@ header h2{
     font-size: 6.4rem;
     letter-spacing: .5rem;
     line-height: 1.2;
-    margin-bottom: 30px;
   }
 }
 
 .byline {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-	margin-bottom: 40px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+	margin-bottom: 30px;
 }
 
 @media all and (min-width: 640px) {
   .byline {
     font-size: 1.8rem;
-    line-height: 1.5;
     margin-bottom: 40px;
     margin-right: 100px;
   }
@@ -251,8 +249,9 @@ header h2{
 .cta-button {
 	background-color: #ee6e7b;
 	border-radius: 4px;
-	color: white;
-  font-size: 1.4rem;
+  color: white;
+  display: inline-block;
+  font-size: 1.2rem;
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	margin: 0 auto;
