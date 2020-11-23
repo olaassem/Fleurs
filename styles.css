@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* browser rest */
 *,
 *::after,
 *::before {
   background: transparent;
 	border: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -13,14 +21,14 @@
 
 html {
   font-size: 62.5%;
-  font-weight: 300;
   letter-spacing: .05rem;
   overflow-x: hidden;
 }
 
 body {
   background-color: #f7f2e8;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 	color: #2b292d;
 	font-family: 'Roboto', sans-serif;
 }
@@ -37,15 +45,18 @@ body {
   width: .1rem;
 }
 
-
 /* nav */
 .main-nav {
 	background-color: white;
 }
 
 .main-nav__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1200px;
 	padding: 14px 20px;
@@ -78,12 +89,18 @@ body {
 }
 
 .sub-navs__link a {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: #1a1a1a;
 	color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 	font-weight: 700;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0;
 	padding: 4px 8px;
 	position: relative;
@@ -96,7 +113,11 @@ body {
 
 @media all and (min-width: 640px) {
   .sub-navs {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 0;
     text-transform: uppercase;
@@ -125,57 +146,72 @@ body {
 	content: '';
 	display: block;
 	height: 3px;
+	-webkit-transition: width .3s;
+	-o-transition: width .3s;
 	transition: width .3s;
 	width: 0;
 }
 
 .sub-navs__link:hover::after {
+	-webkit-transition: width .3s;
+	-o-transition: width .3s;
 	transition: width .3s;
 	width: 100%;
 }
 
 /* header */
 header {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   flex-direction: column-reverse;
 	margin: 0 auto;
 	max-width: 640px;
-	padding-left: 40px;
-	padding-right: 40px;
-  padding-top: 50px;
+  padding: 20px 40px 0;
   text-align: center;
 }
 
 @media all and (min-width: 760px) {
 	header {
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex: 1 1 0px;
-		flex-direction: row;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 0px;
+		        flex: 1 1 0px;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		margin: 0 auto;
 		max-width: 1200px;
-		padding-left: 50px;
-		padding-right: 50px;
-    padding-top: 70px;
+		padding: 60px 50px 0;
     text-align: left;
 	}
 }
 
 header h2{
-  font-family: 'Abril Fatface', serif;
+  font-family: 'Lora', serif;
   font-size: 3.6rem;
-  font-weight: bold;
   margin-bottom: 40px;
-  text-transform: lowercase;
 }
 
 @media all and (min-width: 640px) {
   header h2{
     font-size: 6.4rem;
     letter-spacing: .5rem;
-    margin-bottom: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
   }
 }
 
@@ -201,6 +237,8 @@ header h2{
 }
 
 .button-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -214,24 +252,23 @@ header h2{
 	background-color: #ee6e7b;
 	border-radius: 4px;
 	color: white;
-  display: inline-block;
-  
   font-size: 1.4rem;
-
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	margin: 0 auto;
 	padding: 19px 40px 20px;
 	text-align: center;
 	text-transform: uppercase;
+	-webkit-transition: background-color .4s ease-out;
+	-o-transition: background-color .4s ease-out;
 	transition: background-color .4s ease-out;
 	width: 70%;
 }
 
-  .download {
-    margin-left: 8px;
-    padding: 12px 16px;
-  }
+.download {
+  margin-left: 8px;
+  padding: 12px 16px;
+}
 
 @media all and (min-width: 640px) {
 	.cta-button {
@@ -257,7 +294,9 @@ header h2{
 	left: 55px;
 	position: absolute;
 	top: 50px;
-	transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+	    -ms-transform: rotate(15deg);
+	        transform: rotate(15deg);
 	z-index: -1;
 }
 
