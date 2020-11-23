@@ -35,21 +35,31 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 body {
-  /* background-color: ; */
+  background-color: #f7f2e8;
   color: #2b292d;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  /* font-weight: 300; */
+  letter-spacing: 0.025em;
  }
 
 .main-nav {
-  /* background-color: ; */
+  background-color: white;
  }
 
  .main-nav__wrapper {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  padding: 10px 50px;
+  padding: 20px 50px;
+  max-width: 75rem;
+ }
+
+ .main-nav__logo {
+  font-family: 'Abril Fatface', serif;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
  }
 
  .sub-navs {
@@ -61,11 +71,11 @@ body {
 
  .sub-navs__link a{
   color: black;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .25rem .75rem;
+  margin: .25rem  1.5rem;
   position: relative;
   font-size: .75rem;
   color: #1a1a1a;
@@ -88,35 +98,67 @@ body {
 }
 
 .sub-navs__link:hover::after {
-  width: 110%;
+  width: 100%;
   transition: width .3s;
 }
 
 
  header {
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
   align-items: center;
   display: flex;
-  flex: 1 1 0px;
-  max-width: 75rem;
+  flex-direction: column;
+  max-width: 40rem;
  }
 
+ @media all and (min-width: 1000px) {
+  header {
+    margin: 0 auto;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    align-items: center;
+    display: flex;
+    flex: 1 1 0px;
+    max-width: 75rem;
+   }
+}
+
+
  header h2 {
-  font-family: 'Prata', serif;
-  font-size: 48px;
-  padding-bottom: 20px;
+  font-family: 'Abril Fatface', serif;
+  font-size: 62px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  line-height: 1.0625;
  }
 
 .byline {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   line-height: 1.5;
+  margin-right: 100px;
+  font-size: 18px;
+  font-weight: 300;
+ }
+
+ .button-wrapper {
+  display: flex;
+ }
+
+ @media all and (min-width: 1000px) {
+  .button-wrapper {
+    display: block;
+  }
  }
 
  .cta-button {
   text-transform: uppercase;
   background-color: #ee6e7b;
+  letter-spacing: 0.1em;
   padding: 19px 40px 20px;
   border-radius: 4px;
   font-weight: bold;
@@ -124,11 +166,14 @@ body {
   color: white;
   font-size: 14px;
   transition: background-color .4s ease-out;
+  margin: 0 auto;
 }
 
 .cta-button:hover {
   background-color: #da4d5b;
 }
+
+
 
 .img-wrapper {
   position: relative;
@@ -156,6 +201,9 @@ body {
 
  .border {
    position: absolute;
-   bottom: 20px;
+   top: 40px;
+ }
+
+ @media all and (max-width: 999px) and (min-width: ???px) {
  }
 
