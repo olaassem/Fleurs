@@ -1,4 +1,4 @@
-gsap.from('.img-pattern', {
+gsap.from('.background-pattern', {
   opacity: 0,
   duration: 8,
   y: -50,
