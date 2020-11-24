@@ -169,7 +169,7 @@ header {
   flex-direction: column-reverse;
 	margin: 0 auto;
 	max-width: 640px;
-  padding: 20px 40px 0;
+  padding: 60px 40px 0;
   text-align: center;
 }
 
@@ -280,33 +280,59 @@ header h2{
 	background-color: #da4d5b;
 }
 
-.img-wrapper {
+.row {
+	align-items: flex-end;
+	display: flex;
+	height: 100%; 
+	margin-bottom: 30px;
 	position: relative;
+	width: 120%;
 }
 
-.img-pattern {
-	left: 55px;
+@media all and (min-width: 640px) {
+	.row {
+		margin-bottom: 0;
+	}
+}
+
+.background-container {
+	bottom: -30px;
+	height: 190%;
 	position: absolute;
-	top: 50px;
-	-webkit-transform: rotate(15deg);
-	    -ms-transform: rotate(15deg);
-	        transform: rotate(15deg);
+	-webkit-transform: rotate(250deg);
+	    -ms-transform: rotate(250deg);
+	        transform: rotate(250deg);
 	z-index: -1;
 }
 
-img {
-	display: block;
-	max-height: 100%;
+@media all and (min-width: 759px) {
+	.background-container {
+		height: 170%;
+		top: -100px;
+	}
+}
+
+.background-pattern {
 	max-width: 100%;
+	max-height: 100%;
+	-o-object-fit: fill;
+	   object-fit: fill;
+	translate: rotate(45deg);
 }
 
-.border-container {
-	height: 90px;
-	position: relative;
-	z-index: -2;
+.img-flowers,
+.img-woman { 
+	-o-object-fit: contain; 
+	   object-fit: contain; 
+	width: 100%;
 }
 
-.border {
-	position: absolute;
-	top: 40px;
+@media all and (min-width: 640px) {
+	.img-woman { 
+		width: 110%;
+	}
+	
+	.img-flowers { 
+		width: 120%;
+	}
 }
