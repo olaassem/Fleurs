@@ -313,18 +313,24 @@ header h2{
 }
 
 .background-pattern {
+	border-radius: 50%;
 	max-width: 100%;
 	max-height: 100%;
 	-o-object-fit: fill;
-	   object-fit: fill;
+		 object-fit: fill;
+	opacity: .7;
 	translate: rotate(45deg);
 }
 
 .img-flowers,
 .img-woman { 
 	-o-object-fit: contain; 
-	   object-fit: contain; 
+		 object-fit: contain;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+		 filter: drop-shadow(5px 5px 5px #222); 
 	width: 100%;
+
+
 }
 
 @media all and (min-width: 640px) {
