@@ -1,27 +1,10 @@
-gsap.from('.background-pattern', {
-  opacity: 0,
-  duration: 1,
-  y: 80,
-});
+//Header Animation Timeline
+let hdrTimeline = gsap.timeline({ defaults:{ opacity: 0 } });
 
-gsap.from('.hdr-stagger', {
-  opacity: 0,
-  duration: 1,
-  y: -50,
-  stagger: 0.6
-});
+hdrTimeline.from('.background-pattern',{ duration: 1, y: 80 })
+  .from('.img-flowers', { duration: 10, y: 80, ease: Elastic.easeOut.config(1, 0.3), y: 20}, "-=0.8" )
+  .from('.img-woman', { duration: 10, y: -80, ease: Elastic.easeOut.config(1, 0.3), y: -20}, "-=10")
+  .from('.hdr-stagger', { duration: 1, y: -50, stagger: 0.4 }, "-=9");
 
-gsap.from('.img-woman', {
-  opacity: 0,
-  duration: 5,
-  y: -50,
-  ease: Elastic.easeOut.config(1, 0.3), y: -80
-});
 
-gsap.from('.img-flowers', {
-  opacity: 0,
-  duration: 30,
-  y: 50,
-  ease: Elastic.easeOut.config(1, 0.3), y: 100
-});
 
