@@ -368,18 +368,15 @@ header h2{
 	width: 50%;
 }
 
-.border-anime img {
-	object-fit: cover;
-	width: 100%
-}
-
 .scroll {
 	margin: 0 auto;
 	height: 500px;
 	position: relative;
 	font-family: 'Lora', serif;
 	font-size: 2rem;
+	overflow: hidden;
 	text-align: center;
+
 }
 
 .scroll p {
