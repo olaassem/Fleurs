@@ -342,14 +342,6 @@ header h2{
 	}
 }
 
-.footer {
-	background-color: #84b4a4;
-	color: white;
-	height: 50px;
-	width: 100%;
-	padding: 14px 50px;
-}
-
 .flower-border {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -404,5 +396,20 @@ header h2{
 	bottom: 10px;
 	left: 150px;
 	transform: scaleX(-1);
-
 }
+
+.footer {
+	background-color: #84b4a4;
+	color: white;
+	height: 50px;
+	width: 100%;
+	padding: 14px 50px;
+	font-size: 1.4em;
+	text-align: right;
+}
+
+.footer a {
+	color: white;
+	font-weight: 600;
+}
+
